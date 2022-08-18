@@ -86,6 +86,7 @@
   left: -50%;
   width: 100px;
   height: 0;
+  /* display: none; */
   box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.3000);
   overflow: hidden;
   transition: height 0.3s;
@@ -93,7 +94,7 @@
 }
 .header .site-topbar  ul > li.submenu:hover .submenu-list{
  height: 150px;
- display: block;
+ /* display: block; */
 }
 
 .header .site-topbar  ul > li .submenu-list ul li {
@@ -108,7 +109,8 @@ height: 30px;
 
 .header .site-topbar  ul > li .submenu-list ul li a:hover{
   color: #FF6A00;
-  }
+
+}
 .header .site-topbar  ul > li .submenu-list ul li img{
 margin: 0 3px 0 6px;
 vertical-align: -4px;
@@ -267,14 +269,16 @@ vertical-align: -1px;
   border-right: 0;
   font-size: 14px;
   padding-left: 10px;
+  transition: border .3s;
+  
 }
 .header .site-header .site-searchbox input:hover{
-  border:1px solid  #E5E6E5;
+  border:1px solid  #B0B0B0;
   border-right: 0;
 
 }
 .header .site-header .site-searchbox input:hover + .btn {
-  border:1px solid  #E5E6E5;
+  border:1px solid  #B0B0B0;
 }
 
 .header .site-header .site-searchbox input:focus {
@@ -295,6 +299,7 @@ vertical-align: -1px;
   color: #78716A ;
   cursor: pointer;
   border:1px solid  #E0E0E0;
+  transition: border .3s;
 
 }
 .header .site-header .site-searchbox .btn span {
@@ -314,4 +319,61 @@ vertical-align: -1px;
   background-color: #FF6A00;
   color: #fff;
   /* font-size: 12px; */
+}
+
+.banner-slider {
+  position: relative;
+  height: 460px;
+  background-color: red;
+}
+
+.banner-slider .category {
+  float: left;
+  height: 460px;
+  width: 234px;
+  background-color: #3F3D3D;
+  padding-top: 19px;
+  box-sizing: border-box;
+}
+
+.banner-slider .swipper {
+  /* width: 100%;*/
+  height: 460px;
+  background-color: #ddd;
+}
+
+.banner-slider .category ul li {
+  line-height: 42px;
+  padding: 0 23px 0 30px;
+  font-size: 14px;
+}
+
+.banner-slider .category ul li:hover {
+
+background-color: #FF6A00;
+}
+
+.banner-slider .category ul li a {
+  text-decoration: none;
+  color:#fff;
+
+  }
+
+.banner-slider .category ul li em {
+  float: right;
+  color: #fff;
+}
+
+.banner-slider .category ul li .category-detail {
+  position: absolute;
+  top: 0;
+  left: 234px;
+  width: 992px;
+  height: 460px;
+  background-color: grey;
+  display: none;
+}
+
+.banner-slider .category ul li:hover .category-detail {
+  display: block;
 }

@@ -2,11 +2,11 @@ body {
   font: 14px/1.5;
   background-color: #fff;
   color: #000;
-  min-width: 1126px !important;
+  min-width: 1226px !important;
 }
 
 .container { 
-  width: 1126px;
+  width: 1226px;
 
   margin: 0 auto;
 }
