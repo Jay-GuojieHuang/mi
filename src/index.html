@@ -10,8 +10,10 @@
   <meta name="description" content="Mini商城是一家提供优质商品的一站式便民网站">
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../src/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./fonts/iconfont.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -96,7 +98,7 @@
           </ul>
         </nav>
         <div class="site-searchbox">
-          <input  class="" type="text" name="" id="" placeholder="高端旗舰"/>
+          <input class="" type="text" name="" id="" placeholder="高端旗舰" />
           <button class="btn"><span class="iconfont icon-fangdajing"></span></button>
         </div>
 
@@ -106,27 +108,260 @@
 
   <!-- header end -->
 
-<main class="page">
-  <section class="banner-slider container">
-    <div class="category">
-      <ul>
-        <li><em class="iconfont icon-xiangyoujiantou"></em></a><a href="#">手机</a></a><div class="category-detail">1</div></li>
-        <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">电视</a><div class="category-detail">2</div></li>
-        <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">笔记本 平板</a><div class="category-detail">3</div></li>
-        <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">出行 穿戴</a><div class="category-detail">4</div></li>
-        <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">耳机 音箱</a><div class="category-detail">5</div></li>
-        <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">家电</a><div class="category-detail">6</div></li>
-        <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">智能 路由器</a><div class="category-detail">7</div></li>
-        <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">电源 配件</a><div class="category-detail">8</div></li>
-        <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">健康 儿童</a><div class="category-detail">9</div></li>
-        <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">生活 箱包</a><div class="category-detail">10</div></li>
-      </ul>
-    </div>
-    <div class="swipper"></div>
-  </section>
-</main>
+  <main class="page">
+    <section class="banner-slider container">
+      <div class="category">
+        <ul>
+          <li><em class="iconfont icon-xiangyoujiantou"></em></a><a href="#">手机</a></a>
+            <div class="category-detail">1</div>
+          </li>
+          <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">电视</a>
+            <div class="category-detail">2</div>
+          </li>
+          <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">笔记本 平板</a>
+            <div class="category-detail">3</div>
+          </li>
+          <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">出行 穿戴</a>
+            <div class="category-detail">4</div>
+          </li>
+          <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">耳机 音箱</a>
+            <div class="category-detail">5</div>
+          </li>
+          <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">家电</a>
+            <div class="category-detail">6</div>
+          </li>
+          <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">智能 路由器</a>
+            <div class="category-detail">7</div>
+          </li>
+          <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">电源 配件</a>
+            <div class="category-detail">8</div>
+          </li>
+          <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">健康 儿童</a>
+            <div class="category-detail">9</div>
+          </li>
+          <li><em class="iconfont icon-xiangyoujiantou"></em><a href="#">生活 箱包</a>
+            <div class="category-detail">10</div>
+          </li>
+        </ul>
+      </div>
+      <div class="swipper">
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/banner1.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/banner2.webp" alt=""></div>
+            <div class="swiper-slide"><img src="./images/banner3.webp" alt=""></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination swiper-pagination-white"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next swiper-button-white"></div>
+          <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+        <!-- Swiper end-->
+      </div>
+
+    </section>
 
 
+    <section class="rec-sec">
+      <div class="container">
+
+        <div class="longBanner">
+          <img src="./images/banner-long.png" alt="banner-long">
+        </div>
+
+        <div class="music-recommand">
+          <h2>歌 单 推 荐</h2>
+          <div class="m-tab">
+            <a class="active" href="#">为你推荐</a>
+            <a href="#">官方歌单</a>
+            <a href="#">情歌</a>
+            <a href="#">网络歌曲</a>
+            <a href="#">经典KTV</a>
+            <a href="#">热歌</a>
+          </div>
+          <div class="music-item clearfix">
+            <ul class="current">
+              <li>
+                <a href="#">
+                  <img src="./images/749.png" alt="">
+                  <span class="play-btn"><span class="iconfont icon-play-circle"></span></span>
+                </a>
+                <h3>拒绝不开心丨rap情歌甜到你发晕12312</h3>
+                <span>播放量：1253.9万</span>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/11.png" alt="">
+                  <span class="play-btn"><span class="iconfont icon-play-circle"></span></span>
+                </a>
+                <h3>百听不厌！300首古风党必听良曲</h3> <span>播放量：1.1亿</span>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/745.png" alt="">
+                  <span class="play-btn"><span class="iconfont icon-play-circle"></span></span>
+                </a>
+                <h3>鬼畜打败恐惧｜整点阳间的东西</h3>
+                <span>播放量：146.1万</span>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/750.png" alt="">
+                  <span class="play-btn"><span class="iconfont icon-play-circle"></span></span>
+                </a>
+                <h3>李信｜这里是为我所统帅的战场！</h3>
+                <span>播放量：1821.6万</span>
+
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/751.png" alt="">
+                  <span class="play-btn"><span class="iconfont icon-play-circle"></span></span>
+                </a>
+                <h3>千禧盛世 • 重启旧时光</h3>
+                <span>播放量：2.1亿</span>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./images/11.png" alt="">
+                  <span class="play-btn"><span class="iconfont icon-play-circle"></span></span>
+                </a>
+                <h3>拒绝不开心丨rap情歌甜到你发晕</h3>
+                <span>播放量：1253.9万</span>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/749.png" alt="">
+                  <span class="play-btn"><span class="iconfont icon-play-circle"></span></span>
+                </a>
+                <h3>百听不厌！300首古风党必听良曲</h3> <span>播放量：1.1亿</span>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/750.png" alt="">
+                  <span class="play-btn"><span class="iconfont icon-play-circle"></span></span>
+                </a>
+                <h3>鬼畜打败恐惧｜整点阳间的东西</h3>
+                <span>播放量：146.1万</span>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/745.png" alt="">
+                  <span class="play-btn"><span class="iconfont icon-play-circle"></span></span>
+                </a>
+                <h3>李信｜这里是为我所统帅的战场！</h3>
+                <span>播放量：1821.6万</span>
+
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/751.png" alt="">
+                  <span class="play-btn"><span class="iconfont icon-play-circle"></span></span>
+                </a>
+                <h3>千禧盛世 • 重启旧时光</h3>
+                <span>播放量：2.1亿</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="playground container">
+      <div class="playground-header clearfix">
+        <div class="header-title">
+          <h2>自在游乐 健康成长</h2>
+          <p>大人过大年，小朋友也有小乐趣。改造房间，给小朋友准备一个“游乐场”，无论是准备带着小朋友回家，还是就地过年，都可以享受
+            闲适的亲子时光。</p>
+        </div>
+        <div class="more">
+          <a href="#">更多儿童产品</a>
+        </div>
+
+      </div>
+      <div class="playground-content clearfix">
+        <div class="left">
+          <a href="#" class="dot dot-1"></a>
+          <a href="#" class="dot dot-2"></a>
+          <a href="#" class="dot dot-3"></a>
+        </div>
+        <div class="middle">
+          <div class="content-m-top">
+            <a href="#" class="dot dot-4"></a>
+          </div>
+          <div class="content-m-bottom">
+          <a href="#" class="dot dot-5"></a>
+          </div>
+        </div>
+        <div class="right">
+          <div class="content-r-top"></div>
+          <div class="content-r-bottom"></div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="../js/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      effect: 'fade',
+      autoplay: true,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+
+  <script>
+    const recTabList = document.getElementsByClassName("m-tab")
+    const recUlList = document.getElementsByClassName("music-item")
+
+    // console.log(recTabList[0].children);
+    for (let i = 0; i < recTabList[0].children.length; i++) {
+
+      recTabList[0].children[i].onclick = function (e) {
+        e.preventDefault()
+        // alert(i)
+        for (let j = 0; j < recTabList[0].children.length; j++) {
+          recTabList[0].children[j].classList.remove('active')
+        }
+        recTabList[0].children[i].classList.add('active')
+        for (let k = 0; k < recUlList[0].children.length; k++) {
+          recUlList[0].children[k].classList.remove('current')
+        }
+        recUlList[0].children[i].classList.add('current')
+      }
+    }
+  </script>
 </body>
 
 </html>
